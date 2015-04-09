@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+		package="org.me.androidswiftapplication">
+  <!-- the android:debuggable="true" attribute is overwritten by the compiler when the debug info option is set -->
+  <application 
+		android:theme="@style/AppTheme"
+		android:label="@string/app_name"
+		android:icon="@drawable/icon"
+		android:debuggable="true">
+	<activity android:label="@string/app_name" android:name="org.me.androidswiftapplication.SignInActivity">
+	  <intent-filter>
+		<action android:name="android.intent.action.MAIN" />
+		<category android:name="android.intent.category.LAUNCHER" />
+	  </intent-filter>
+	</activity>
+	<activity
+			android:name=".SuccessActivity"
+			android:label="@string/app_name" />
+  </application>
+  <uses-sdk android:minSdkVersion="15" />
+</manifest>
